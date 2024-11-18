@@ -35,7 +35,7 @@ const AppointmentForm = () => {
     console.log("hasan")
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/user/doctors",
+        "https://hospital-management-backend-7enb.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
